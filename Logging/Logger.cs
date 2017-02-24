@@ -66,6 +66,15 @@ namespace CommonLib.Logging
             WriteFormattedLog(mColorError, "Error", logContent);
         }
 
+        public virtual void Error(string logContent, Exception ex)
+        {
+            string exMsg = ex.Message;
+#if DEBUG
+            exMsg = ex.ToString();
+#endif
+            WriteFormattedLog(mColorError, "Error", string.Format("{0}: {1}", logContent, exMsg);
+        }
+
         public virtual void Info(string logContent)
         {
             WriteFormattedLog(mColorInfo, "Info", logContent);
