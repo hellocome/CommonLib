@@ -72,7 +72,7 @@ namespace CommonLib.Logging
 #if DEBUG
             exMsg = ex.ToString();
 #endif
-            WriteFormattedLog(mColorError, "Error", string.Format("{0}: {1}", logContent, exMsg);
+            WriteFormattedLog(mColorError, "Error", string.Format("{0}: {1}", logContent, exMsg));
         }
 
         public virtual void Info(string logContent)
