@@ -42,9 +42,18 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\StaticArray.cs" />
+    <Compile Include="Database\ConnectionFlags.cs" />
+    <Compile Include="Database\DBConnectionBase.cs" />
+    <Compile Include="Database\IDatabaseStatements.cs" />
+    <Compile Include="Database\IDBConnection.cs" />
+    <Compile Include="Database\MSSQL\MSSQLConnectionBase.cs" />
+    <Compile Include="Database\MSSQL\MSSQLDatabase.cs" />
+    <Compile Include="Database\ODBCProvider.cs" />
+    <Compile Include="Database\PreparedStatement.cs" />
     <Compile Include="LibEncoding\StaticEncoder.cs" />
     <Compile Include="LibEncoding\StaticStringMethod.cs" />
     <Compile Include="Logging\ConsoleLogger.cs" />
@@ -125,6 +134,10 @@
     <Compile Include="UserInterface\WinForms\WindowStypeMinMaxClose.designer.cs">
       <DependentUpon>WindowStypeMinMaxClose.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utilities\RegistryWrapper.cs" />
+    <Compile Include="Utilities\Temp.cs" />
+    <Compile Include="Utilities\XMLValidator.cs" />
+    <Compile Include="Utilities\ZIPWrapper.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -177,7 +190,6 @@
     <Content Include="UserInterface\Icons\MinimizeBlack.png" />
     <Content Include="UserInterface\Icons\MinimizeWhite.png" />
     <Content Include="UserInterface\Icons\NButton_Exit.png" />
-    <Content Include="UserInterface\Icons\PCI.png" />
     <Content Include="UserInterface\Icons\RestoreBlack.png" />
     <Content Include="UserInterface\Icons\RestoreWhite.png" />
     <Content Include="UserInterface\Icons\Wallet.ico" />
