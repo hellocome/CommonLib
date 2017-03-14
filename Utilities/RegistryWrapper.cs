@@ -37,7 +37,7 @@ namespace CommonLib.Utilities
             }
             catch (Exception ex)
             {
-                Logger.Instance.Error("RegistryWrapper: ", ex);
+                //Logger.Instance.Error("RegistryWrapper: ", ex);
             }
 
             return regNames;
@@ -53,7 +53,7 @@ namespace CommonLib.Utilities
             }
             catch (Exception ex)
             {
-                Logger.Instance.Error("RegistryWrapper: ", ex);
+                //Logger.Instance.Error("RegistryWrapper: ", ex);
 
                 return defaultValue;
             }
