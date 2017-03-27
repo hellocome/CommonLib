@@ -138,6 +138,7 @@
     <Compile Include="Utilities\Temp.cs" />
     <Compile Include="Utilities\XMLValidator.cs" />
     <Compile Include="Utilities\ZIPWrapper.cs" />
+    <Compile Include="XML\AttributeGrammarObject.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
