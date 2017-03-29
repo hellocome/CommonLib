@@ -13,7 +13,6 @@ namespace CommonLib.UserInterface.WinForms
             this.FlatStyle = FlatStyle.Flat;
             this.FlatAppearance.BorderSize = 0;
             this.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(0, 255, 255, 255);
-            this.DoubleBuffered = true;   
         }
     }
 }
